@@ -1,0 +1,115 @@
+{
+  "messages": [
+    {
+      "type": "human",
+      "content": "What is the capital of China?",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "id": "c9d0214d-251c-40fd-80a0-f8a5e77c5dc5"
+    },
+    {
+      "type": "ai",
+      "content": "",
+      "additional_kwargs": {
+        "tool_calls": [
+          {
+            "id": "2d1se8319",
+            "function": {
+              "arguments": "{\"query\":\"China capital\"}",
+              "name": "tavily_search_results_json"
+            },
+            "type": "function"
+          }
+        ]
+      },
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 19,
+          "prompt_tokens": 285,
+          "total_tokens": 304,
+          "completion_time": 0.042342436,
+          "prompt_time": 0.016747267,
+          "queue_time": 0.049408723,
+          "total_time": 0.059089703
+        },
+        "model_name": "llama-3.1-8b-instant",
+        "system_fingerprint": "fp_1151d4f23c",
+        "finish_reason": "tool_calls",
+        "logprobs": null
+      },
+      "id": "run-6decf388-c20f-49fd-b888-d1967997abc6-0",
+      "tool_calls": [
+        {
+          "name": "tavily_search_results_json",
+          "args": {
+            "query": "China capital"
+          },
+          "id": "2d1se8319",
+          "type": "tool_call"
+        }
+      ],
+      "usage_metadata": {
+        "input_tokens": 285,
+        "output_tokens": 19,
+        "total_tokens": 304
+      }
+    },
+    {
+      "type": "tool",
+      "content": "[{\"url\": \"https://clintonwhitehouse3.archives.gov/WH/New/China/beijing.html\", \"content\": \"| The modern day capital of China is Beijing (literally \\\"Northern Capital\\\"), which first served as China's capital city in 1261, when the Mongol ruler Kublai Khan established his seat of power in the area centered around what is today Beihai Park. The framework of the city as it currently exists, and in particular the maze of interlocking gates and buildings that comprise the Forbidden City, began to take shape in 1402 when Emperor Yongle relocated the Ming court in an effort to secure China's\"}, {\"url\": \"https://www.ebsco.com/research-starters/geography-and-cartography/beijing-china\", \"content\": \"Beijing, the capital of the People's Republic of China, is one of the world's oldest cities, with a history of habitation exceeding four thousand years. Known as the \\\"Northern Capital,\\\" it has served as the seat of power for various Chinese dynasties. Located in northeastern China, Beijing Municipality covers 17,000 square kilometers and features a mix of historical landmarks and modern infrastructure. The city is densely populated, with an urban population of over 21 million, making it the [...] Though Beijing is the educational, political, and cultural capital of China, the cities of Hong Kong and Shanghai dominate in terms of economics and industry. In 2022, the gross domestic product (GDP) of Beijing was estimated to be 4.16 trillion yuan as compared to 4.02 trillion yuan the previous year. [...] Published in: 2025\\n\\nBy: Issitt, Micah L.\\n\\nGo to EBSCOhost and sign in to access more content about this topic.\\n\\n## Beijing, China\\n\\nBeijing is the capital of the People’s Republic of China. Called the “Northern Capital,” Beijing is one of the oldest cities in the world, having been occupied by the Chinese people for over four thousand years and serving as the capital of multiple Chinese dynasties.\"}]",
+      "name": "tavily_search_results_json",
+      "id": "bd2671d5-6c4c-4c76-8d96-7f63195c492e",
+      "tool_call_id": "2d1se8319",
+      "artifact": {
+        "query": "China capital",
+        "follow_up_questions": null,
+        "answer": null,
+        "images": [],
+        "results": [
+          {
+            "url": "https://clintonwhitehouse3.archives.gov/WH/New/China/beijing.html",
+            "title": "Beijing - The White House",
+            "content": "| The modern day capital of China is Beijing (literally \"Northern Capital\"), which first served as China's capital city in 1261, when the Mongol ruler Kublai Khan established his seat of power in the area centered around what is today Beihai Park. The framework of the city as it currently exists, and in particular the maze of interlocking gates and buildings that comprise the Forbidden City, began to take shape in 1402 when Emperor Yongle relocated the Ming court in an effort to secure China's",
+            "score": 0.99954176,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.ebsco.com/research-starters/geography-and-cartography/beijing-china",
+            "title": "Beijing, China | Research Starters - EBSCO",
+            "content": "Beijing, the capital of the People's Republic of China, is one of the world's oldest cities, with a history of habitation exceeding four thousand years. Known as the \"Northern Capital,\" it has served as the seat of power for various Chinese dynasties. Located in northeastern China, Beijing Municipality covers 17,000 square kilometers and features a mix of historical landmarks and modern infrastructure. The city is densely populated, with an urban population of over 21 million, making it the [...] Though Beijing is the educational, political, and cultural capital of China, the cities of Hong Kong and Shanghai dominate in terms of economics and industry. In 2022, the gross domestic product (GDP) of Beijing was estimated to be 4.16 trillion yuan as compared to 4.02 trillion yuan the previous year. [...] Published in: 2025\n\nBy: Issitt, Micah L.\n\nGo to EBSCOhost and sign in to access more content about this topic.\n\n## Beijing, China\n\nBeijing is the capital of the People’s Republic of China. Called the “Northern Capital,” Beijing is one of the oldest cities in the world, having been occupied by the Chinese people for over four thousand years and serving as the capital of multiple Chinese dynasties.",
+            "score": 0.99942964,
+            "raw_content": null
+          }
+        ],
+        "response_time": 1.28,
+        "request_id": "d9dd8928-4e81-4525-8fb9-1f3d51492fc5"
+      }
+    },
+    {
+      "type": "ai",
+      "content": "The capital of China is Beijing.",
+      "additional_kwargs": {},
+      "response_metadata": {
+        "token_usage": {
+          "completion_tokens": 8,
+          "prompt_tokens": 745,
+          "total_tokens": 753,
+          "completion_time": 0.010420943,
+          "prompt_time": 0.048115832,
+          "queue_time": 0.054359658,
+          "total_time": 0.058536775
+        },
+        "model_name": "llama-3.1-8b-instant",
+        "system_fingerprint": "fp_ff2b098aaf",
+        "finish_reason": "stop",
+        "logprobs": null
+      },
+      "id": "run-c2a51405-d157-4e5c-8c06-3f1db7424437-0",
+      "usage_metadata": {
+        "input_tokens": 745,
+        "output_tokens": 8,
+        "total_tokens": 753
+      }
+    }
+  ]
+}
